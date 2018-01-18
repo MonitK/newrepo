@@ -1,0 +1,98 @@
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git add hello.c
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   hello.c
+
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git commit -m "commiting after changes"
+[master 8ef2197] commiting after changes
+ 1 file changed, 2 insertions(+)
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git remote add origin "https://github.com/MonitK/newrepo.git"
+fatal: remote origin already exists.
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git remote
+origin
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git push -u orogin
+fatal: 'orogin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git push -u origin master
+remote: Permission to MonitKapoor/newrepo.git denied to MonitK.
+fatal: unable to access 'https://github.com/MonitKapoor/newrepo/': The requested URL returned error: 403
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ clear
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git push -u origin master
+remote: Permission to MonitKapoor/newrepo.git denied to MonitK.
+fatal: unable to access 'https://github.com/MonitKapoor/newrepo/': The requested URL returned error: 403
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git remote add origin "https://github.com/MonitK/newrepo.git"
+fatal: remote origin already exists.
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git remote
+origin
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git remove origin master
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git remote remove origin
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git remote
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git remote add origin "https://github.com/MonitK/newrepo.git"
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 504 bytes | 252.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/MonitK/newrepo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 /d/WD (master)
+$
