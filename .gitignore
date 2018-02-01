@@ -3,3 +3,6 @@
 
 #ignore paint files#
 *.bmp
+
+#ignore the test folder#
+.test
